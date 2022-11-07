@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './TweetBox.css';
 import { Avatar, Button } from '@material-ui/core';
 
-function TweetBox({PostBox, postBoxList, updatePost}) {
+function TweetBox({postBoxList, updatePost}) {
   const [tweet, setTweet] =  useState('')
   
   const handleChange = (event) => {
     setTweet(event.target.value)
-    console.log(tweet)
+    // console.log(tweet)
   }
 
   // const handleKey = (event) => {
@@ -18,7 +18,8 @@ function TweetBox({PostBox, postBoxList, updatePost}) {
   // }
 
   const clearField = () => {
-    updatePost(<PostBox key={postBoxList.length} name={"test 69420"} tag={"richest_man"} time={"1"} text={tweet}/>)
+    tweet !== '' ? updatePost({key:postBoxList.length, name:"test 69420", tag:"richest_man", time:"1", text:tweet}) : console.log("nothing to tweet");
+    console.log(postBoxList)
     setTweet('')
   }
 

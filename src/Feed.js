@@ -19,10 +19,10 @@ function Feed() {
         <h2 className="feed__header">Home</h2>
 
         {/* tweet box */}
-        <TweetBox PostBox={PostBox} postBoxList={postBoxList} updatePost={updatePost}/>
+        <TweetBox postBoxList={postBoxList} updatePost={updatePost}/>
         
         {/* posts */}
-        {postBoxList}
+        {postBoxList.map(post => (<PostBox key={post.key} name={post.name} tag={post.tag} time={post.time} text={post.text}/>))}
     </div>
   )
 }
