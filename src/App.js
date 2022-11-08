@@ -1,22 +1,9 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import Feed from './Feed';
-import Widgets from './Widgets';
-import './App.css';
+import Home from './Home';
 
 function App() {
   return (
-    <div className="app">
-
-      {/* sidebar */}
-      <Sidebar />
-
-      {/* feed */}
-      <Feed />
-
-      {/* widgets */}
-      <Widgets />
-    </div>
+    <Home />
   );
 }
 
