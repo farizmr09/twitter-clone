@@ -16,7 +16,7 @@ function PostBox({name, time, text}) {
                             {name}
                         </p>
                         <p className="timeTag">
-                            {time}h
+                            1h
                         </p>
                     </div>
                     <p className="userContent">
