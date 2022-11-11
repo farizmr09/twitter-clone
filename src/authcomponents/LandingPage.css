@@ -1,0 +1,66 @@
+.landingPage {
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.landingPage__twitterIcon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--twitter-color);
+    font-size: 200px !important;
+}
+
+.landingPage__button {
+    width: 75% !important;
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    font-size: 15px !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 36px !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.landingPage__button:hover {
+    background-color: #38adf4 !important;
+    transition: color 100ms ease-in;
+}
+
+
+.landingPage__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landingPage__input > input {
+    margin: 12px 0px 12px 12px;
+    padding: 2px 0px;
+    line-height: 24px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid var(--twitter-bg);
+    outline: none;
+}
+
+.landingPage__input > input:focus {
+    border-bottom: 1px solid var(--twitter-color);
+}
+
+.landingPage__option {
+    display: flex;
+}
+
+.landingPage__option > .MuiButton-root {
+    text-transform: inherit !important;
+    font-size: 12px !important;
+    color: var(--twitter-color) !important;
+}
