@@ -9,7 +9,6 @@ import PostBox from './PostBox';
 function Feed({email}) {
   const [tweet, setTweet] =  useState('')
   const [postBoxList, setPostBoxList] = useState([])
-  const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
 
   // function handleClick() {
     
@@ -46,14 +45,14 @@ function Feed({email}) {
       } catch (e) {
         console.error("Error adding document: ", e);
       }
-      forceUpdate();
       setTweet('');
   }
 
   useEffect(()=>{
     fetchData();
+    console.log("here")
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  })
   
   return (
     <div className="feed">
