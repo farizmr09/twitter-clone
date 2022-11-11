@@ -1,0 +1,82 @@
+.registerPage {
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0px;
+}
+
+.registerPage__twitterIcon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--twitter-color);
+    font-size: 110px !important;
+}
+
+.headerContainer > p {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.registerPage__button {
+    width: 75% !important;
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    font-size: 15px !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 36px !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.registerPage__button:hover {
+    background-color: #38adf4 !important;
+    transition: color 100ms ease-in;
+}
+
+
+.registerPage__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerPage__input > input {
+    margin: 12px 0px 12px 12px;
+    padding: 2px 0px;
+    line-height: 24px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid var(--twitter-bg);
+    outline: none;
+}
+
+.registerPage__input > input:focus {
+    border-bottom: 1px solid var(--twitter-color);
+}
+
+.registerPage > p {
+    padding: 5px 15px;
+    margin-left: 20px;
+    color: #8C9AB5;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+p > span {
+    color: var(--twitter-color)
+}

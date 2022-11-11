@@ -5,7 +5,7 @@ import { ChatBubbleOutlineRounded, FavoriteBorderOutlined, Repeat } from '@mater
 import { IosShareRounded } from '@mui/icons-material';
 
 
-function PostBox({name, tag, time, text}) {
+function PostBox({name, time, text}) {
     return (
         <div className="postBox">
             <div className="postBox__output">
@@ -14,9 +14,6 @@ function PostBox({name, tag, time, text}) {
                     <div className="userInfo">
                         <p className="userName">
                             {name}
-                        </p>
-                        <p className="userTag">
-                            @{tag}
                         </p>
                         <p className="timeTag">
                             {time}h

@@ -10,7 +10,6 @@
 
 .landingPage__twitterIcon {
     margin-top: 20px;
-    margin-left: 20px;
     margin-bottom: 20px;
     color: var(--twitter-color);
     font-size: 200px !important;
@@ -53,14 +52,14 @@
 }
 
 .landingPage__input > input:focus {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--twitter-color);
 }
 
 .landingPage__option {
     display: flex;
 }
 
-.landingPage__option > Button {
+.landingPage__option > .MuiButton-root {
     text-transform: inherit !important;
     font-size: 12px !important;
     color: var(--twitter-color) !important;
