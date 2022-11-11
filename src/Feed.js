@@ -34,11 +34,11 @@ function Feed({ email }) {
         tweet: tweet,
         timestamp: serverTimestamp(),
       });
+      forceUpdate();
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
       console.error("Error adding document: ", e);
     }
-    forceUpdate();
     setTweet("");
     console.log("here")
   };
